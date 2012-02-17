@@ -17,7 +17,7 @@ OBJS		= \
 		mm/mm.o				\
 		drivers/video/video.o
 
-CFLAGS		= -Iinclude/ -Iarch/$(ARCH)/include/
+CFLAGS		= -Iinclude/ -Iarch/$(ARCH)/include/ -fno-stack-protector
 
 all: $(KERNEL)
 
