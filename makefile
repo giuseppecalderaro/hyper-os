@@ -17,7 +17,8 @@ OBJS		= \
 		mm/mm.o				\
 		drivers/video/video.o
 
-CFLAGS		= -Iinclude/ -Iarch/$(ARCH)/include/ -fno-stack-protector
+CFLAGS		= -Iinclude/ -Iarch/$(ARCH)/include/ -fno-stack-protector -m32
+LDFLAGS		= -m elf_i386
 
 all: $(KERNEL)
 
